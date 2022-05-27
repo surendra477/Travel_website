@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@media (max-width: 765px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 35%;
+        height: 100%;
+        background-color: white;
+        /* color: black; */
+        border: none;
+        text-align: center;
+        z-index: 1;
+    }
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+        -webkit-transition: height 0s ease;
+        -moz-transition: height 0s ease;
+        -ms-transition: height 0s ease;
+        -o-transition: height 0s ease;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 500ms ease-in-out;
+        -webkit-transition: left 500ms ease-in-out;
+        -moz-transition: left 500ms ease-in-out;
+        -ms-transition: left 500ms ease-in-out;
+        -o-transition: left 500ms ease-in-out;
+    }
+    .navbar-toggle.collapsed~.navbar-collapse {
+        transition: left 500ms ease-in-out;
+        -webkit-transition: left 500ms ease-in-out;
+        -moz-transition: left 500ms ease-in-out;
+        -ms-transition: left 500ms ease-in-out;
+        -o-transition: left 500ms ease-in-out;
+    }
+    .navbar-brand {
+        position: absolute;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        left: 50%;
+    }
+    .navbar-toggle {
+        border: none !important;
+    }
+    .navbar-toggle:active {
+        border: none !important;
+        background-color: rgb(65, 180, 65) !important;
+    }
+    .navbar-toggle:hover {
+        border: none !important;
+        background-color: rgb(65, 180, 65) !important;
+    }
+    .navbar-toggle:visited {
+        border: none !important;
+        background-color: rgb(65, 180, 65) !important;
+    }
+    .w {
+        color: black !important;
+    }
+    .w:hover {
+        background-color: rgb(187, 190, 187) !important;
+    }
+}
+
+@media(min-width:766px) {
+    .w {
+        color: white !important;
+    }
+    .w:hover {
+        background-color: rgb(65, 160, 65) !important;
+    }
+    .navbar-brand {
+        position: absolute;
+        transform: translateX(-17%);
+        -webkit-transform: translateX(-17%);
+        -moz-transform: translateX(-17%);
+        -ms-transform: translateX(-17%);
+        -o-transform: translateX(-17%);
+        left: 17%;
+    }
+}
+
+.navbar-toggle {
+    float: left !important;
+}
+
+body {
+    padding-top: 90px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 32px !important;
+    font-weight: 400;
+}
+
+.navbar-brand:hover {
+    color: white !important;
+}
+
+.navbar-inverse {
+    color: white;
+    background-color: #4caf50;
+    border: #4caf50;
+}
+
+.navbar {
+    min-height: 65px;
+    -webkit-box-shadow: 0 8px 6px -6px rgb(59, 58, 58);
+    -moz-box-shadow: 0 8px 6px -6px rgb(65, 62, 62);
+    box-shadow: 0 8px 6px -6px rgb(43, 42, 42);
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 65px;
+    line-height: 65px;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+    padding: 9px 10px !important;
+}
+
+.dropdown-menu {
+    background-color: #4caf50 !important;
+}
+
+.dropdown-menu:active {
+    background-color: #4caf50 !important;
+}
+
+.nav-row-design {
+    background-color: #8bc34a;
+    box-shadow: 2px 2px 5px rgba(61, 61, 61, 0.5), inset 5px 5px 8px rgba(94, 93, 93, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 0.2rem;
+}
+
+.t {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(173, 172, 172, 0.5), inset 5px 5px 8px rgba(172, 171, 171, 0.5);
+}
+
+.t:hover {
+    background-color: #7cb342;
+}
+
+.t a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 21.5px;
+        padding-bottom: 21.5px;
+        line-height: 21.5px;
+    }
+}

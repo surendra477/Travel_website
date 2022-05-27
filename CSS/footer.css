@@ -1,0 +1,62 @@
+#footer-anchor {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-anchor:hover {
+    color: pink;
+}
+
+#footer-anchorto {
+    color: rgb(10, 25, 94);
+    text-decoration: none;
+}
+
+#footer-anchorto:hover {
+    color: rgb(190, 13, 152);
+}
+
+#footer-p-up {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+}
+
+#footer-p-down {
+    background-color: #4caf50;
+    color: white;
+}
+
+#footer-follow {
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #3b5999;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-pinterest:hover {
+    color: #bd081c;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../index-style/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../index-style/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to TravelYaari</title>
+</head>
+
+<body class="scrollspy">
+    <a name="home"></a>
+    <div class="navbar-fixed">
+        <nav class="green">
+            <div class="container">
+                <a href="#home" class="brand-logo">TravelYaari</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+
+                    <li>
+                        <a href="#popular">Popular Places</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Places<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown3">More<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <li>
+                        <a href="../index.html" onclick="logout()">logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="setting.html">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="divider"></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li class="divider"></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content">
+            <li><a href="setting.html">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="divider"></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li class="divider"></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="type/beaches.html">Beaches</a></li>
+            <li class="divider"></li>
+            <li><a href="type/hill-station.html">Hill-Stations</a></li>
+            <li class="divider"></li>
+            <li><a href="type/historical.html">Historical Heritage</a></li>
+            <li class="divider"></li>
+            <li><a href="type/parks.html">National Parks</a></li>
+            <li class="divider"></li>
+            <li><a href="type/religious.html ">Religious Richness</a></li>
+            <li class="divider"></li>
+            <li><a href="type/honeymoon.html ">Honeymoon Destinations</a></li>
+            <li class="divider"></li>
+        </ul>
+        <ul id="dropdown4" class="dropdown-content">
+            <li><a href="type/beaches.html">Beaches</a></li>
+            <li class="divider"></li>
+            <li><a href="type/hill-station.html">Hill-Stations</a></li>
+            <li class="divider"></li>
+            <li><a href="type/historical.html">Historical Heritage</a></li>
+            <li class="divider"></li>
+            <li><a href="type/parks.html">National Parks</a></li>
+            <li class="divider"></li>
+            <li><a href="type/religious.html ">Religious Richness</a></li>
+            <li class="divider"></li>
+            <li><a href="type/honeymoon.html ">Honeymoon Destinations</a></li>
+            <li class="divider"></li>
+        </ul>
+    </div>
+    <!-- we put the sidebar li elements outside the div because its fixed div and we wont be able to access these links -->
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+            <a href="#popular">Popular Places</a>
+        </li>
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Places<i class="material-icons right">filter_hdr</i></a>
+        </li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li>
+            <a href="../index.html" onclick="logout()">logout</a>
+        </li>
+    </ul>
+
+    <!-- Section: Slider -->
+    <section class="slider ">
+        <ul class="slides ">
+            <li>
+                <img src="../index-style/img/resort1.jpg " alt="resort1.jpg ">
+                <div class="caption center-align ">
+                    <h2>Take Your Dream Vacation</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only ">Adventure awaits, go find it.</h5>
+                    <a href="contact.html " class="btn btn-large green ">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <img src="../index-style/img/resort2.jpg " alt="resort2.jpg ">
+                <div class="caption left-align ">
+                    <h2>We Work With All Budgets</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only ">Book a ticket and just leave.</h5>
+                    <a href="contact.html " class="btn btn-large green ">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <img src="../index-style/img/resort3.jpg " alt="resort3.jpg ">
+                <div class="caption right-align ">
+                    <h2>Group & Individual Gataways</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only ">Experience. Tourism. These are as education in themselves.</h5>
+                    <a href="contact.html " class="btn btn-large green ">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section: Search -->
+
+
+    <section id="search" class="section section-search green darken-1 white-text center scrollspy ">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search Destinations </h3>
+                    <div class="input-field ">
+                        <input type="text" class="white grey-text autocomplete" placeholder="Agra,Manali,Gulmohar etc..." id="autocomplete-input ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col s12 m4 ">
+                    <div class="card-panel ">
+                        <i class="material-icons large green-text ">room</i>
+                        <h4>Pick Where</h4>
+                        <p>Feed your wanderlust.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large green-text">store</i>
+                        <h4>Travel Shop</h4>
+                        <p>Answer it Royally.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel ">
+                        <i class="material-icons large green-text ">airplanemode_active</i>
+                        <h4>Fly Cheap</h4>
+                        <p>Dream. Explore. Discover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Popular -->
+
+    <section id="popular" class="section section-popular scrollspy ">
+        <div class="container ">
+            <div class="row ">
+                <h4 class="center ">
+                    <span class="green-text ">Popular</span> Places</h4>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../index-style/img/resort1.jpg " alt="resort1.jpg ">
+                            <span class="card-title ">GOA</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>Sandy beaches, warm sunsets, beautiful villages and an atmosphere filled with joy .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../index-style/img/resort2.jpg " alt="resort2.jpg ">
+                            <span class="card-title ">Rameshwaram</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>Rameshwaram is one of the holiest places in India and is located on a beautiful island. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../index-style/img/resort3.jpg " alt="resort3.jpg ">
+                            <span class="card-title ">Manali</span>
+                        </div>
+                        <div class="card-content ">
+                            <p> Manali is seated comfortably in the River Beas Valley, Himachal Pradesh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../places/Historical/Varanasi_c/images/india-in-pictures-beautiful-places-to-photograph-the-ganges-river-varanasi.jpg" alt="resort3.jpg ">
+                            <span class="card-title ">Varanasi</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>Varanasi, popularly known as the City of Lights or Kashi, is a sacred city on the west bank of the River Ganga.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../places/Hill-Stations/LADAKH.jpg " alt="resort3.jpg ">
+                            <span class="card-title ">Leh Ladakh</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>Ladakh is an adventure playground for climbing, jeeps tours, rafting and high-altitude trekking. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 ">
+                    <div class="card ">
+                        <div class="card-image ">
+                            <img src="../places/Hill-Stations/OOTY.jpg" alt="resort3.jpg ">
+                            <span class="card-title ">Ooty</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>Once regarded as the summer headquarters of the East India Company, the Queen of the hills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 center ">
+                    <a href="contact.html " class="btn btn-large blue darken-3 ">
+                        <i class="material-icons left ">send</i>Contact for Booking
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Follow -->
+
+    <section class="section section-follow green darken-2 white-text center ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col s12 ">
+                    <h4>Follow TravelYaari</h4>
+                    <p>Follow us on social media for special offers.</p>
+                    <a href="https://facebook.com " target="_blank " class="white-text ">
+                        <i class="fab fa-facebook fa-4x "></i>
+                    </a>
+                    <a href="https://twitter.com " target="_blank " class="white-text ">
+                        <i class="fab fa-twitter fa-4x "></i>
+                    </a>
+                    <a href="https://linkedin.com " target="_blank " class="white-text ">
+                        <i class="fab fa-linkedin fa-4x "></i>
+                    </a>
+                    <a href="https://googleplus.com " target="_blank " class="white-text ">
+                        <i class="fab fa-google-plus fa-4x "></i>
+                    </a>
+                    <a href="https://pinterest.com " target="_blank " class="white-text ">
+                        <i class="fab fa-pinterest fa-4x "></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Gallery -->
+
+    <section id="gallery" class="section section-gallery scrollspy ">
+        <div class="container">
+            <h4 class="center">
+                <span class="green-text">Photo</span> Gallery
+            </h4>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?beach " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?travel " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?nature " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?beach,travel " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?water " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?building " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?trees " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?cruise " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?beaches " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?traveling " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?bridge " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?boat,travel " alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="section green darken-1 white-text center ">
+        <p class="flow-text ">TravelYaari &copy; 2020</p>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="..\index-style\materialize.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            // INIT sidebar
+            $(".button-collapse ").sidebar();
+
+            //INIT SLIDER
+            $(".slider ").slider({
+                indicators: false,
+                height: 500,
+                transition: 500,
+                interval: 6000
+            });
+
+            //AUTOCOMPLETE
+            $(".autocomplete ").autocomplete({
+                data: {
+                    "Agra ": null,
+                    "gulmohar ": null,
+                    "Hawaii ": null,
+                    "Florida ": null,
+                    "California ": null,
+                    "Jamaica ": null,
+                    "Europe ": null,
+                    "The Bahamas ": null
+                }
+            });
+
+            //INIT SCROLLSPY
+            $(".scrollspy ").scrollSpy();
+
+            //init dropdown
+
+            $(".dropdown-button ").dropdown();
+
+        });
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
+</body>
+
+</html>
